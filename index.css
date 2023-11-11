@@ -1,0 +1,91 @@
+.mainArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.QuestionMain {
+    background: #242424;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+    color: #ddd;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    display: flex;
+    width: 450px;
+    align-items: center;
+    position: relative;
+}
+
+.QuestionText {
+    width: calc(50% - 20px);
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+}
+
+.QuestionArea {
+    margin-left: 40px;
+    width: calc(50% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-end;
+}
+
+.QuestionArea input[type="text"], input[type="number"] {
+    border: 1px solid #ffffff1f;
+    background: #1a73e8;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.QuestionArea>div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2px 0;
+}
+
+.QuestionArea label {
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.QuestionArea label:hover {
+    color: white;
+}
+
+.QuestionMain:before {
+    content: '';
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    background: #242424;
+    left: -15px;
+}
+
+.QuestionMain:after {
+    content: '';
+    width: 2px;
+    background: #242424;
+    position: absolute;
+    left: -15px;
+    height: calc(100% + 8px);
+    top: 0;
+}
+
+.QuestionMain:last-child:after {
+    /* background: red; */
+    height: 50%;
+}
